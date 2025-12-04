@@ -26,7 +26,7 @@ export default function TourDetail() {
   }, [id])
 
   const handleBooking = () => {
-    const isAuthenticated = !!localStorage.getItem("token")
+    const isAuthenticated = !!localStorage.getItem("accessToken")
     if (!isAuthenticated) {
       navigate("/login")
       return
